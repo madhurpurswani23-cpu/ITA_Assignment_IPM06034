@@ -157,16 +157,16 @@ Since Ola/Uber do not publicly release Indian trip data, this dataset is **synth
 
 ```
 delhi-fleet-dynamics/
-├── 📂 data/
+├── data/
 │   ├── delhi_ncr_fleet_2023.csv          ← Raw generated dataset
 │   └── delhi_ncr_fleet_enriched.csv      ← Post-pipeline (with cluster & anomaly cols)
-├── 📂 scripts/
+├── scripts/
 │   ├── generate_dataset.py               ← Realistic Delhi NCR data generator
 │   ├── pipeline.py                       ← Full ML pipeline (run this)
 │   └── build_notebook.py                 ← Notebook builder utility
-├── 📂 notebooks/
+├── notebooks/
 │   └── Delhi_NCR_Fleet_Dynamics.ipynb    ← Interactive walkthrough
-├── 📂 figures/
+├── figures/
 │   ├── 01_daily_trips_overview.png
 │   ├── 02_zone_clustering.png
 │   ├── 03_anomaly_detection.png
@@ -257,7 +257,5 @@ Weekday/weekend and festival demand is modelable with high accuracy. The *sole* 
 ---
 
 <div align="center">
-
-*Built as part of IPM06034 coursework. Dataset synthesized from real Delhi NCR operational patterns.*
 
 </div>
