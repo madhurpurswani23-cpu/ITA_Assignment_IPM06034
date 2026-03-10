@@ -7,7 +7,7 @@
 
 <br /><br />
 
-# 🚖 Delhi NCR Fleet Dynamics
+# Delhi NCR Fleet Dynamics
 ## Hybrid Machine Learning for Ride-Hailing Demand Forecasting
 
 *Fleet volume, operational efficiency, and system resilience — Jan–Dec 2023*
@@ -16,15 +16,15 @@
 
 </div>
 
-## 📌 Overview
+## Overview
 
-This project implements a **full hybrid machine learning pipeline** to forecast daily ride-hailing trip volumes across 8 Delhi NCR dispatch zones — directly adapting the NYC Uber dispatch ML architecture for the Indian urban mobility context.
+This project implements a **full hybrid machine learning pipeline** to forecast daily ride-hailing trip volumes across 8 Delhi NCR dispatch zones directly adapting the NYC Uber dispatch ML architecture for the Indian urban mobility context.
 
 The core insight: **traditional forecasting models fail during sudden anomalies** (Delhi winter fog events, Holi, Diwali, IPL finals). This pipeline solves that by combining unsupervised learning to *map the chaos* and supervised learning to *predict within it*.
 
 <br />
 
-## 🗺️ The Pipeline
+## The Pipeline
 
 ```
 Raw Dispatch Data
@@ -49,7 +49,7 @@ Demand Forecast ◄── Contextualized, robust prediction
 
 <br />
 
-## 📊 Key Results
+## Key Results
 
 | Model | MAE (trips) | RMSE | R² | MAPE |
 |---|---|---|---|---|
@@ -57,11 +57,11 @@ Demand Forecast ◄── Contextualized, robust prediction
 | Random Forest | 150 | 273 | 0.911 | 4.5% |
 | **Gradient Boosting** *(hybrid)* | **86** | **131** | **0.979** | **2.5%** |
 
-> 🔑 The hybrid pipeline reduces MAPE from **49% → 2.5%** by injecting anomaly context from unsupervised learning into the supervised model.
+> The hybrid pipeline reduces MAPE from **49% → 2.5%** by injecting anomaly context from unsupervised learning into the supervised model.
 
 <br />
 
-## 🗃️ Dataset
+## Dataset
 
 **Delhi NCR Ride-Hailing Dispatch Data (2023)**
 
@@ -87,7 +87,7 @@ Since Ola/Uber do not publicly release Indian trip data, this dataset is **synth
 
 <br />
 
-## 📈 Figures
+## Figures
 
 ### City-Wide Daily Trip Volume
 
@@ -105,7 +105,7 @@ Since Ola/Uber do not publicly release Indian trip data, this dataset is **synth
 
 ---
 
-### Isolation Forest — Anomaly Detection
+### Isolation Forest - Anomaly Detection
 
 ![Anomaly Detection](figures/03_anomaly_detection.png)
 
@@ -153,7 +153,7 @@ Since Ola/Uber do not publicly release Indian trip data, this dataset is **synth
 
 <br />
 
-## 🗂️ Repository Structure
+## Repository Structure
 
 ```
 delhi-fleet-dynamics/
@@ -180,7 +180,7 @@ delhi-fleet-dynamics/
 
 <br />
 
-## ⚡ Quickstart
+## Quickstart
 
 ```bash
 # Clone
@@ -202,7 +202,7 @@ jupyter notebook notebooks/Delhi_NCR_Fleet_Dynamics.ipynb
 
 <br />
 
-## 🧰 Requirements
+## Requirements
 
 ```
 numpy>=1.24
@@ -215,7 +215,7 @@ jupyter>=1.0
 
 <br />
 
-## 🏙️ Delhi NCR Zone Map
+## Delhi NCR Zone Map
 
 | Zone ID | Area | Tier | Avg Daily Trips |
 |---|---|---|---|
@@ -230,7 +230,7 @@ jupyter>=1.0
 
 <br />
 
-## 💡 Strategic Takeaways
+## Strategic Takeaways
 
 **1. Mega-Zone Reliance**
 The network is heavily dependent on Z01 (CP New Delhi) and Z02 (Gurugram Cyber). These two zones absorb 55%+ of total demand and all macro-scale spikes. Strategic continuity requires them to remain fully resourced.
@@ -243,7 +243,7 @@ Weekday/weekend and festival demand is modelable with high accuracy. The *sole* 
 
 <br />
 
-## 📚 References & Data Sources
+## References & Data Sources
 
 - Delhi Open Transit Data Platform — [otd.delhi.gov.in](https://otd.delhi.gov.in/)
 - IIIT-Delhi Centre for Sustainable Mobility — [csm.iiitd.ac.in](https://csm.iiitd.ac.in/)
