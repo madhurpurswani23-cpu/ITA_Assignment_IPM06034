@@ -10,7 +10,7 @@
 # Delhi NCR Fleet Dynamics
 ## Hybrid Machine Learning for Ride-Hailing Demand Forecasting
 
-*Fleet volume, operational efficiency, and system resilience — Jan–Dec 2023*
+*Fleet volume, operational efficiency, and system resilience - Jan–Dec 2023*
 
 ---
 
